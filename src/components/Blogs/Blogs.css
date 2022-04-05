@@ -1,0 +1,6 @@
+.blogs__container div {
+    background-color: rgba(182, 182, 182, 0.041);
+    padding: 1.5rem;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
