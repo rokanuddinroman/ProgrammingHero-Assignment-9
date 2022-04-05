@@ -7,3 +7,9 @@
     padding: 1rem;
     margin-bottom: 3rem;
 }
+
+@media screen and (max-width:720px) {
+    .dashboard__container {
+        grid-template-columns: 1fr;
+    }
+}
