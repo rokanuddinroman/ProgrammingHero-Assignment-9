@@ -38,6 +38,18 @@
     margin-bottom: 1rem;
 }
 
+.primary__button {
+    font-family: 'Sora', sans-serif;
+    width: 120px;
+    padding: 10px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    background-image: linear-gradient(to top, #004391 0%, #0066db 51%, #2186FD 100%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .secondary__button {
     padding: 8px 25px;
     border: 0;

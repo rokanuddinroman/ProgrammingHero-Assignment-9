@@ -4,7 +4,7 @@ import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 import './Home.css'
 const Home = () => {
-    const [reviews, setReviews] = useReviews();
+    const [reviews] = useReviews();
 
     let navigate = useNavigate();
 
@@ -15,6 +15,7 @@ const Home = () => {
                     <h1 className='hero__title'>Expect the <span className='hero__key'>Unexpected</span></h1>
                     <h1 className='hero__title hero__title-second'><span className='hero__key'>Ultimate</span> Driving Machine.</h1>
                     <p>The Ferrari 488 has 1 Petrol Engine on offer. The Petrol engine is 3902 cc . It is available with Automatic and Manual transmission.</p>
+                    <button className="primary__button">Order One</button>
                 </div>
                 <div>
                     <img className='hero__image' src="https://purepng.com/public/uploads/large/purepng.com-blue-ferrari-488-spider-carcarferrarivehicletransport-961524650215mnrnk.png" alt="" />
