@@ -13,16 +13,14 @@ const Dashboard = () => {
         <div className="container">
             <h2>Sales Dashboard</h2>
             <div className="dashboard__container">
-                <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data={sales}>
-                        <Line type="monotone" dataKey="sell" stroke="#8884d8" />
-                        <CartesianGrid stroke="#ccc" />
-                        <XAxis dataKey="month" />
-                        <YAxis datakey="sell" />
-                        <Tooltip />
-                        <Legend />
-                    </LineChart>
-                </ResponsiveContainer>
+                <LineChart width={500} height={300} data={sales}>
+                    <Line type="monotone" dataKey="sell" stroke="#8884d8" />
+                    <CartesianGrid stroke="#ccc" />
+                    <XAxis dataKey="month" />
+                    <YAxis datakey="sell" />
+                    <Tooltip />
+                    <Legend />
+                </LineChart>
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart data={sales}>
                         <CartesianGrid strokeDasharray="3 3" />
@@ -34,25 +32,21 @@ const Dashboard = () => {
                         <Area type="monotone" dataKey="investment" stackId="1" stroke="#33A7FF" fill="#33A7FF" />
                     </AreaChart>
                 </ResponsiveContainer>
-                <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={sales}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="month" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Bar dataKey="revenue" stackId="a" fill="#33A7FF" />
-                        <Bar dataKey="investment" stackId="a" fill="#47DEAD" />
-                    </BarChart>
-                </ResponsiveContainer>
-                <ResponsiveContainer width="100%" height="100%">
-                    <PieChart>
-                        <Legend />
-                        <Tooltip />
-                        <Pie data={sales} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
-                        <Pie data={sales} dataKey="investment" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#47DEAD" label />
-                    </PieChart>
-                </ResponsiveContainer>
+                <BarChart width={500} height={300} data={sales}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="month" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="revenue" stackId="a" fill="#33A7FF" />
+                    <Bar dataKey="investment" stackId="a" fill="#47DEAD" />
+                </BarChart>
+                <PieChart width={500} height={300}>
+                    <Legend />
+                    <Tooltip />
+                    <Pie data={sales} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+                    <Pie data={sales} dataKey="investment" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#47DEAD" label />
+                </PieChart>
             </div>
         </div>
     );
