@@ -1,0 +1,25 @@
+.review__card {
+    background-color: rgba(182, 182, 182, 0.041);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.review_card_head {
+    display: flex;
+    align-items: center;
+}
+
+.review_card_img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.review_card_name {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.review_card_rating {
+    font-weight: 600;
+    margin-top: 10px;
+}

@@ -29,5 +29,12 @@
     background-color: rgba(182, 182, 182, 0.041);
     border-radius: 12px;
     padding: 8px 15px;
+}
 
+.nav__item .active {
+    font-family: 'Sora', sans-serif;
+    color: #1F75FC;
+    background-color: rgba(182, 182, 182, 0.041);
+    border-radius: 12px;
+    padding: 8px 15px;
 }
