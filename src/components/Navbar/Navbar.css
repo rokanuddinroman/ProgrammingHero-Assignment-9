@@ -1,0 +1,33 @@
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__item {
+    display: inline;
+}
+
+.logo {
+    font-family: 'Sora', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.nav__link {
+    font-family: 'Sora', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    font-family: 'Sora', sans-serif;
+    color: #1F75FC;
+    background-color: rgba(182, 182, 182, 0.041);
+    border-radius: 12px;
+    padding: 8px 15px;
+
+}
