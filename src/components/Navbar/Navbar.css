@@ -23,6 +23,10 @@
     text-decoration: none;
 }
 
+.logo {
+    padding: 15px 15px;
+}
+
 .nav__link:hover {
     font-family: 'Sora', sans-serif;
     color: #1F75FC;
