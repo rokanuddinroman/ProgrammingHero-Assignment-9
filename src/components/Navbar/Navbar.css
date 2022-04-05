@@ -20,6 +20,10 @@
     font-weight: 800;
 }
 
+.nav__item div {
+    display: inline;
+}
+
 .nav__link {
     font-family: 'Sora', sans-serif;
     color: rgb(255, 255, 255);
